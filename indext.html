@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>English Quiz Challange</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h1 id="quiz-title">English Quiz Challange</h1>
+
+            <!--Layar Awal-->
+            <div id="start-screen">
+                <p>Enter your name to start:</p>
+                <input type="text" id="name-input" placeholder="Your name" />
+                <button id="start-btn">Start Quiz</button>
+            </div>
+
+            <!--Layar Quiz-->
+            <div id="quiz-screen" style="display: none;">
+                <p id="player-name"></p>
+                <div id="timer">Time: 5</div>
+                <div id="score">Score: 0</div>
+                <h2 id="question">Question goes here</h2>
+                <div id="choices"></div>
+            </div>
+
+            <!--Layar Hasil-->
+            <div id="result-screen" style="display: none;">
+                <h2>Quiz Finished!</h2>
+                <p id="final-message"></p>
+                <img id="result-image"
+        src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Congrats!"
+        style="width: 150px; margin: 15px auto; display: block;">
+                <button onclick="window.location.reload()">Play Again</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
